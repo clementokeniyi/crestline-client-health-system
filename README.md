@@ -20,7 +20,7 @@
 
 ## About this repo
 
-**Crestline is a fictional B2B services company created for this demonstration.** This is a test system built on fictional data in free-tier tools. It is not a live client system, no real client used it, and no result here is a production business result.
+**Crestline is a fictional B2B services company created for this demonstration.** This is a test system built on fictional data in free-tier tools. It is not a live client system, no real client used it, and no result here is a production business result. No time saved or revenue is claimed.
 
 The system checks 11 HubSpot test companies, applies a rule to decide who is slipping, and — for flagged accounts only — updates the company record, creates a HubSpot task for the owner, sends a Slack alert, and logs a row in Google Sheets. A rule decides who is flagged. AI only writes the explanation, and a human edits it.
 
@@ -150,23 +150,7 @@ After the run the filter was restored to Client Health Does not exist, a complet
 
 > "I use Claude to draft the explanation, I edit it, and the rule decides who is flagged. That is the control."
 
-The Claude step is **manual, not an API call** — the free test scope has no paid API key, and no Claude API output is faked in this build. Version 1 of the prompt had no length limit, no exact fields, no rule for a blank owner, and no ban on guessing. Version 2, my edit, allows exactly one plain-language sentence under 30 words, using only Company Name, Test Owner and Test Last Activity Date — and forbids inventing a reason for the silence. Both versions, the reasons generated for the 5 flagged accounts, and why each change was made are in [docs/ai-explanation-prompt.md](docs/ai-explanation-prompt.md).
-
----
-
-## What this is not
-
-- **No adoption.** No real account manager used this live. A one-week pilot with one owner is proposed in the handover, not claimed.
-- **No time saved, no revenue claimed.** No calculation method was established for either, so neither is estimated here.
-- **No threshold-to-notification time.** The 4-second run duration is the automation's own runtime, not a business response time.
-- **The crossed run is kept, not hidden.** An earlier run (Run ID `3b989fe9125042b795b4f46b4dd6eaf4`, 32 operations) logged 9 Sheet rows with Juniper duplicated 5 times, because route membership did not follow visual drag position on the canvas. Old HubSpot tasks and Slack alerts from that run remain; clean-run counts use a timestamp cutoff for those two outputs.
-- **Known limits:** the filter uses a fixed date (Test Last Activity Date earlier than October 5, 2026) — a live version needs a rolling date calculation. HubSpot tasks carry the company in the title and notes but are not associated to the company record, because Make offers no Company ID target for task association. The Claude step is manual. Routes 6–9 are empty stubs.
-
----
-
-## Handover — how to run it, and how to pause it
-
-Manual trigger only. The scenario is Inactive and the schedule is not enabled — that is the safe parked state. To pause a live version, set the scenario to Inactive in Make; do not delete the scenario, the HubSpot test companies, or the Sheet. On an alert: read the Slack alert and the HubSpot task, check in with the client that day, then update Client Health with the outcome. If the data is wrong, fix the HubSpot test fields, not the rule. Full handover, including the reviewer questions, is in [docs/handover.md](docs/handover.md).
+The Claude step is manual, not an API call. Full prompt versions and the 5 generated reasons are in [docs/ai-explanation-prompt.md](docs/ai-explanation-prompt.md).
 
 ---
 
