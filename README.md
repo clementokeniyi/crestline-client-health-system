@@ -4,7 +4,7 @@
 <img src="https://img.shields.io/badge/HubSpot-CRM-FF7A59?style=for-the-badge&logo=hubspot&logoColor=white"/>
 <img src="https://img.shields.io/badge/Slack-Alerts-4A154B?style=for-the-badge&logo=slack&logoColor=white"/>
 <img src="https://img.shields.io/badge/Google_Sheets-Audit_Log-34A853?style=for-the-badge&logo=googlesheets&logoColor=white"/>
-<img src="https://img.shields.io/badge/Status-Test_System_-_Inactive-6C757D?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Status-Test_System_Inactive-6C757D?style=for-the-badge"/>
 
 <br/><br/>
 
