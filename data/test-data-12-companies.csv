@@ -1,0 +1,13 @@
+Company Name,Domain,Contact First Name,Contact Last Name,Contact Email,Lifecycle Stage,Deal Name,Deal Stage,Deal Value USD,Owner,Last Activity Date,Ticket Notes
+Alpine Outfitters,alpine-test.example.com,Maya,Chen,maya.chen@alpine-test.example.com,Customer,Alpine Outfitters - Annual Plan,Open,12000,Alex Morgan,2026-10-24,Check-in completed and next report scheduled
+Beacon Bakery,beacon-test.example.com,Liam,Okafor,liam.okafor@beacon-test.example.com,Customer,Beacon Bakery - Growth Plan,Open,8500,Sam Patel,2026-10-21,Client replied to last report
+Cedar Dental,cedar-test.example.com,Sofia,Reyes,sofia.reyes@cedar-test.example.com,Customer,Cedar Dental - Annual Plan,Closed Won,15000,Alex Morgan,2026-10-17,Onboarding complete
+Delta Fitness,delta-test.example.com,Noah,Smith,noah.smith@delta-test.example.com,Customer,Delta Fitness - Growth Plan,Open,9200,Sam Patel,2026-10-11,Client asked for revised report
+Ember Coffee,ember-test.example.com,Ava,Johnson,ava.johnson@ember-test.example.com,Customer,Ember Coffee - Starter Plan,Open,6800,Alex Morgan,2026-10-08,Last publish delayed by one week
+Falcon Legal,falcon-test.example.com,Ethan,Brown,ethan.brown@falcon-test.example.com,Customer,Falcon Legal - Scale Plan,Open,22000,Sam Patel,2026-10-03,No reply after report sent
+Grove Hotels,grove-test.example.com,Isla,Wilson,isla.wilson@grove-test.example.com,Customer,Grove Hotels - Scale Plan,Open,18500,Alex Morgan,2026-09-28,No publish for four weeks
+Harbor Logistics,harbor-test.example.com,Jordan,Lee,jordan.lee@harbor-test.example.com,Customer,Harbor Logistics - Scale Plan,Open,27000,Sam Patel,2026-09-24,Client missed last check-in
+Harbour Logistics,harbor-test.example.com,Jordan,Lee,jordan.lee@harbor-test.example.com,Customer,Harbour Logistics - Scale Plan,Open,27000,Sam Patel,2026-09-24,Duplicate record for testing
+Ivy Salon,ivy-test.example.com,Mia,Taylor,mia.taylor@ivy-test.example.com,Customer,Ivy Salon - Starter Plan,Open,4500,Alex Morgan,,No activity date recorded
+Juniper Travel,juniper-test.example.com,Lucas,Green,lucas.green@juniper-test.example.com,Customer,Juniper Travel - Growth Plan,Open,11000,Sam Patel,03-Oct-2026,Date format is not ISO format
+Kite Realty,kite-test.example.com,Emma,White,emma.white@kite-test.example.com,Customer,Kite Realty - Scale Plan,Open,30000,,2026-08-27,Owner is missing for testing
