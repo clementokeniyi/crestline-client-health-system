@@ -152,6 +152,10 @@ After the run the filter was restored to Client Health Does not exist, a complet
 
 The Claude step is manual, not an API call. Full prompt versions and the 5 generated reasons are in [docs/ai-explanation-prompt.md](docs/ai-explanation-prompt.md).
 
+## Outcome
+
+In the verified clean run, 5 of the 11 test companies were flagged At Risk, and each one received a HubSpot task, a Slack alert and a Sheet log row in 4 seconds — no duplicates, no missed accounts. That is what the build proves: a slipping account gets surfaced instead of being found when the client leaves. It does not prove business impact — no real team used this live, so no time saved or churn prevented is claimed here.
+
 ---
 
 ## 📁 Documentation
